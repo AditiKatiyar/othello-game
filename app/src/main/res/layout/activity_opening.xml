@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.aditi.othello.OpeningActivity"
+    android:background="@color/brown">
+
+    <TextView
+        android:id="@+id/onePlayerGame"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="50dp"
+        android:width="160dp"
+        android:background="@drawable/button_image"
+        android:textColor="@color/yellow"
+        android:textSize="30sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="1 Player Game"
+        android:gravity="center_horizontal"
+        app:layout_constraintTop_toTopOf="@+id/guideline"
+        android:onClick="goToStartActivity" />
+
+    <TextView
+        android:id="@+id/twoPlayerGame"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/button_image"
+        android:text="2 Player Game"
+        android:textColor="@color/yellow"
+        android:textSize="30sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:gravity="center_horizontal"
+        app:layout_constraintTop_toTopOf="@+id/guideline"
+        android:onClick="goToStartActivity"/>
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.25" />
+</android.support.constraint.ConstraintLayout>

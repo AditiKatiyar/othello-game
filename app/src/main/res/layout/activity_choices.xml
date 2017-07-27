@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.aditi.othello.ChoicesAcitivity"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="@drawable/back_ground"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dip"
+        android:layout_gravity="center"
+        android:gravity="bottom"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Othello"
+            android:textSize="50dp"
+            android:textColor="@color/yellow"
+            android:fontFamily="cursive"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dip"
+        android:layout_gravity="center"
+        android:gravity="bottom"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:background="@drawable/button_image"
+            android:text="NEW GAME"
+            android:textColor="@color/yellow"
+            android:textSize="15dp"
+            android:layout_marginBottom="5dp"
+            android:onClick="Play"
+            />
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:background="@drawable/button_image"
+            android:text="SCOREBOARD"
+            android:textColor="@color/yellow"
+            android:textSize="15dp"
+            android:layout_marginBottom="5dp"
+            android:onClick="Scoreboard"/>
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:background="@drawable/button_image"
+            android:text="HOW TO PLAY"
+            android:textColor="@color/yellow"
+            android:textSize="15dp"
+            android:layout_marginBottom="10dp"
+            android:onClick="howToPlay"/>
+    </LinearLayout>
+
+</LinearLayout>
